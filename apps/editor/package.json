@@ -1,5 +1,5 @@
 {
-  "name": "@toast-ui/editor-kl",
+  "name": "editor-kl",
   "version": "3.3.0",
   "description": "GFM  Markdown Wysiwyg Editor - Productive and Extensible",
   "keywords": [
@@ -14,6 +14,7 @@
     "preview",
     "gfm"
   ],
+  "private": false,
   "main": "dist/toastui-editor.js",
   "module": "dist/esm/",
   "exports": {
@@ -75,6 +76,10 @@
     "ts2js": "tsc --outDir tmpdoc --sourceMap false --target ES2015 --noEmit false",
     "doc:dev": "npm run ts2js && tuidoc --serv",
     "doc": "npm run ts2js && tuidoc"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   },
   "devDependencies": {
     "@toast-ui/release-notes": "^2.0.1",
